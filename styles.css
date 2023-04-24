@@ -1,0 +1,58 @@
+.calculator {
+    display: flex;  /* define o elemento como flex container */
+    flex-direction: column;  /* define a direção dos elementos filhos como coluna */
+    justify-content: center; /* centraliza o conteúdo verticalmente */
+    align-items: center; /* centraliza o conteúdo horizontalmente */
+    width: 200px; /* define a largura do elemento */
+    height: 400px; /* define a altura do elemento */
+    border-radius: 0; /* define o raio de borda */
+    border-radius: 10px; /* define o raio de borda */
+    padding: 20px; /* define o preenchimento interno do elemento */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* define a sombra do elemento */
+    background-color: #FDB813; /* define a cor de fundo do elemento */
+    color: #FF8000; /* define a cor do texto */
+    margin: auto; /* centraliza o elemento na página */
+}
+
+.buttons {
+    text-align: center; /* centraliza o conteúdo dos botões */
+}
+
+.calculator .display h2 {
+    margin: 0; /* remove a margem do elemento */
+    font-size: 25px; /* define o tamanho da fonte */
+    font-weight: bold; /* define o peso da fonte como negrito */
+    color: #fff; /* define a cor do texto */
+    text-align: center; /* centraliza o texto */
+    padding: 10px; /* define o preenchimento interno do elemento */
+}
+
+.calculator input {
+    width: 100%; /* define a largura dos campos de entrada */
+    padding: 2px; /* define o preenchimento interno dos campos de entrada */
+    margin-bottom: 10px; /* define a margem inferior dos campos de entrada */
+    font-size: 20px; /* define o tamanho da fonte */
+    border: none; /* remove a borda dos campos de entrada */
+    border-radius: 5px; /* define o raio de borda dos campos de entrada */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* define a sombra dos campos de entrada */
+}
+
+.calculator button {
+    width: 45%; /* define a largura dos botões */
+    padding: 8px; /* define o preenchimento interno dos botões */
+    margin: 10px;; /* define a margem inferior dos botões */
+    font-size: 24px; /* define o tamanho da fonte */
+    border: none; /* remove a borda dos botões */
+    border-radius: 5px; /* define o raio de borda dos botões */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* define a sombra dos botões */
+    background-color: #FF8000; /* define a cor de fundo dos botões */
+    color: #FFFFFF; /* define a cor do texto dos botões */
+    cursor: pointer; /* muda o cursor para apontar quando o mouse estiver sobre o botão */
+    transition: all 0.2s ease-in-out; /* adiciona uma transição suave */
+}
+
+
+  
+
+
+  

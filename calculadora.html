@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <div class="calculator">
+        <div class="display">
+          <h2>Calculadora</h2>
+          <input type="text" id="num1">
+          <input type="text" id="num2">
+          <input type="text" id="result" disabled>
+          <div class="buttons">
+            <div>
+              <button style="width: 70px; height: 50px;" onclick="add()">+</button>
+              <button style="width: 70px; height: 50px;" onclick="subtract()">-</button>
+            </div>
+            <div>
+              <button style="width: 70px; height: 50px;" onclick="multiply()">*</button>
+              <button style="width: 70px; height: 50px;" onclick="divide()">/</button>
+            </div>
+            <div>
+              <button style="width: 100px; height: 50px;" onclick="limpar()">Limpar</button>
+            </div>
+      </div>
+      
+    <script>
+      /* Funções para realizar as operações */
+      function add() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var result = num1 + num2;
+        document.getElementById("result").value = result;
+      }
+      function subtract() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var result = num1 - num2;
+        document.getElementById("result").value = result;
+      }
+      function multiply() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var result = num1 * num2;
+        document.getElementById("result").value = result;
+      }
+      function divide() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var result = num1 / num2;
+        document.getElementById("result").value = result;
+      }
+      function limpar() {
+        document.getElementById("num1").value = "";
+        document.getElementById("num2").value = "";
+        document.getElementById("result").value = "";
+  }
+    </script>
+  </body>
+</html>
